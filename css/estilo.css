@@ -11,7 +11,7 @@
      --secondary-border-color: #56575a;
 
     /* definir cores padrão para os textos em variáveis*/
-    --tittle-color: #f0f0f0; 
+    --title-color: #f0f0f0; 
     --text-color: #9a9a9c;
     --link-color: #9a9a9c;
     --icon-color: #c7c8c9;
@@ -55,16 +55,73 @@ html[data-theme-'light'] .brand-logo{
     background: var(--primary-bg-color);
     font-family: 'inter', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color); /*cor do texto*/
-
  }
 a {
-     text-decoration: none;
+     text-decoration: none; 
     color: var(--text-color);
-
 }
 a:hover {
     color: var(--primary-color);
-
+}
+i{
+    color: var(--icon-color);
 }
 
+b{
+    font-weight: 400;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+h2{
+    font-size: 2rem;
+    text-align: center; 
+    letter-spacing: 0.4rem;
+}
+h3 {
+    font-size: 1.55rem;
+    text-align: left;
+}
+h4{
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.15rem;
+    text-align: left;
+}
+h1,h2,h3 {
+    font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-weight: 200;
+}
+p, span, li{
+    font-size: 1rem;
+}
+p {
+    text-align: justify;
+}
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center ;
+    align-items: center;
+    width: 100%; /* comprimento*/
+    padding: 0.5rem 1rem;
+    z-index: 2; /* sobreposição */
+}
+.header-toggle{
+    display: flex;
+    justify-content: flex-end;
+}
+.header-brand .header-logo{
+    width: 3.25rem;
+    height: 3.25rem;
+}
+#toggleTheme {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: ease-in-out .4s;
+}
 
