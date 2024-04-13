@@ -1,101 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
-    /* definir o tema dark no site */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
+
+/* definir o tema dark do site  */
 :root, :root[data-theme='dark'] {
-     /* definir cores padrão em variável */
-
-
-    --primary-color: #f0f0f0; /* cor texto */
-    --primary-bg-color:  #111217; /* BG= background*/
-    --secondary-bg-color: #c7c8c9;
-     --primary-border-color:  #28292E; 
-     --secondary-border-color: #56575a;
-
-    /* definir cores padrão para os textos em variáveis*/
-    --title-color: #f0f0f0; 
+    /* definir cores padrão em Variável */
+    
+    --primary-color: #f0f0f0;  /* cor textos */
+    --primary-bg-color: #171111;  /* BG = Background */
+    --secondary-bg-color: #C7c8c9;
+    --primary-border-color: #28292E;
+    --secondary-border-color: #56575A;
+        
+    /* definir cores padrão para os TEXTOS em Variável */
+    --title-color: #F0F0F0;
     --text-color: #9a9a9c;
-    --link-color: #9a9a9c;
-    --icon-color: #c7c8c9;
+    --link-color:#9a9a9c;
+    --icon-color: #C7C8C9;
+} 
 
-    }
- :root [data-theme='light']{
+:root [data-theme='light'] {
 
-    --primary-color: #0b0b0f; 
+    --primary-color: #0b0b0f;
     --primary-bg-color: #e9e9e9;
-     --secondary-border-color: #c7c8c9;
-     --primary-border-color: #c7c8c9;
-     --secondary-border-color: #9a9a9c;
+    --secondary-bg-color: #C7c8c9;
+    --primary-border-color:  #C7c8c9;
+    --secondary-border-color: #9a9a9c;
 
-     --title-color: #0b0b0f;
-     --text-color: #28292e;
-     --link-color: #28292e;
-     --icon-color: #56575a; 
-
+    --title-color: #0b0b0f;
+    --text-color: #28292E;
+    --link-color: #28292E;
+    --icon-color: #56575A;
 }
-html[data-theme-'light'] .brand-logo{
+
+html[data-theme='light'] .brand-logo {
     filter: invert(1);
-}
+} 
+/* html[data-theme='light'] .tecnologias-logo */
 
-
-/* Reset CSS
+/*  Reset CSS  
     Padronizar Navegadores
 */ 
-
 * {
-
-    margin:0; /* Margem*/
-    padding: 0; /* espaçamento */ 
+    margin: 0;      /*margem*/  
+    padding: 0;     /* espaçamento */
     vertical-align: baseline;
     list-style: none;
-    scrollbar-width: thin; /* barra de rolagem*/
-    scrollbar-color: var(--primary-bg-color) transparent;
-
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-bg-color) transparent;
 }
- body {
- 
+
+body {
     background: var(--primary-bg-color);
-    font-family: 'inter', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-color); /*cor do texto*/
- }
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color); /* cor do Texto*/
+}
 a {
-     text-decoration: none; 
+    text-decoration: none;
     color: var(--text-color);
 }
 a:hover {
     color: var(--primary-color);
 }
-i{
+i {
     color: var(--icon-color);
 }
-
-b{
+b {
     font-weight: 400;
 }
-h1{
+h1 {
     font-size: 2.5rem;
-    font-weight: 200;
+    font-weight: 200;  
 }
-h2{
+h2 {
     font-size: 2rem;
-    text-align: center; 
+    text-align: center;
     letter-spacing: 0.4rem;
 }
 h3 {
     font-size: 1.55rem;
     text-align: left;
 }
-h4{
+h4 {
     color: var(--primary-color);
     font-weight: 400;
     font-size: 1.15rem;
     text-align: left;
 }
-h1,h2,h3 {
+h1, h2, h3 {
     font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     color: var(--title-color);
     font-weight: 200;
 }
-p, span, li{
+p, span, li {
     font-size: 1rem;
 }
 p {
@@ -104,9 +100,9 @@ p {
 .header {
     display: flex;
     flex-flow: row wrap;
-    justify-content:center ;
+    justify-content: space-between;
     align-items: center;
-    width: 100%; /* comprimento*/
+    width: 100%;  /* comprimento*/
     padding: 0.5rem 1rem;
     z-index: 2; /* sobreposição */
 }
@@ -114,9 +110,9 @@ p {
     display: flex;
     justify-content: flex-end;
 }
-.header-brand .header-logo{
-    width: 3.25rem;
-    height: 3.25rem;
+.header-brand .brand-logo {
+    width: 3.25rem;  /* comprimento */
+    height: 3.25rem;  /* altura */
 }
 #toggleTheme {
     font-size: 1.5rem;
@@ -124,4 +120,3 @@ p {
     cursor: pointer;
     transition: ease-in-out .4s;
 }
-
