@@ -5,17 +5,17 @@
 :root, :root[data-theme='dark'] {
     /* definir cores padrão em Variável */
     
-    --primary-color: #f0f0f0;  /* cor textos */
-    --primary-bg-color: #171111;  /* BG = Background */
-    --secondary-bg-color: #28292E;
-    --primary-border-color: #28292E;
-    --secondary-border-color: #56575A;
+    --primary-color: #cc865a;  /* cor textos */
+    --primary-bg-color: #cab7a2;  /* BG = Background */
+    --secondary-bg-color: #1a1402;
+    --primary-border-color: #544424;
+    --secondary-border-color: #cca890;
         
     /* definir cores padrão para os TEXTOS em Variável */
-    --title-color: #F0F0F0;
-    --text-color: #9a9a9c;
+    --title-color: #544424;
+    --text-color: #010101;
     --link-color:#9a9a9c;
-    --icon-color: #C7C8C9;
+    --icon-color:#ec8a90;
 } 
 
 :root [data-theme='light'] {
