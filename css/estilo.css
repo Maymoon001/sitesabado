@@ -1,8 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
 
 /* definir o tema dark do site  */
-:root, :root[data-theme='dark'] {
+:root,
+:root[data-theme='dark'] {
     /* definir cores padrão em Variável */
     
     --primary-color: #cc865a;  /* cor textos */
@@ -18,7 +18,7 @@
     --icon-color:#ec8a90;
 } 
 
-:root [data-theme='light'] {
+:root[data-theme='light'] {
 
     --primary-color: #0b0b0f;
     --primary-bg-color: #e9e9e9;
@@ -454,7 +454,7 @@ footer p {
 }
 
 /* Responsividade  768px  */
-@media (min-width: 992px ) {   /* largura de tela igual ou maior  */
+@media (min-width: 768px ) {   /* largura de tela igual ou maior  */
     /* comprimento mínimo */
     .header {
         position: fixed;
